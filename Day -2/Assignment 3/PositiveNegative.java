@@ -16,25 +16,25 @@
 
     /**
      * This method should return true if one is negative and one is positive.
-     * @param a, the first parameter which is an int to this method.
-     * @param b, the second parameter which is an int to this method.
+     * @param valA, the first parameter which is an int to this method.
+     * @param valB, the second parameter which is an int to this method.
      * @param negative, the third parameter which is a boolean to this method.
      * 
      * @return true if one is negative and the other is positive except if parameter
      * negative is true, then return true if both a and b are negative.
      */
-    public static boolean posNeg(int a, int b, boolean negative) {
+    public static boolean posNeg(final int valA, final int valB, final boolean negative) {
         // Your code goes here....
-        if (negative)
-            if (a < 0 && b < 0)
+        if (negative) {
+            if (valA < 0 && valB < 0) {
                 return true;
-            else 
+            } else {  
                 return false;
-        else  
-            if ((a < 0 && b > 0) || (a > 0 && b < 0))  
+            }
+        } else if ((valA < 0 && valB > 0) || (valA > 0 && valB < 0)) { 
                 return true;
-            else 
-                return false; 
-
+            } else {
+                return false;
+            }
+        }
     }
- }
