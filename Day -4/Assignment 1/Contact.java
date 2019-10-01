@@ -33,8 +33,8 @@ public final class Contact {
         return this.email;
     }
 
-    public void setPhoneNumber(final String phn) {
-        this.phoneNumber = phn;
+    public void setPhoneNumber(final String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getPhoneNumber() {
@@ -42,6 +42,7 @@ public final class Contact {
     }
 
     public String toString() {
-        return this.name + " " + this.email + " " + this.phoneNumber();
+        return "{ Name = "+ this.name + ", Email = " + this.email
+        + ", Phone Number = " + this.phoneNumber + " }";
     }
 }

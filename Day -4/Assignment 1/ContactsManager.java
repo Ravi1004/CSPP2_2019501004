@@ -50,7 +50,7 @@ class ContactsManager {
      */
     public void addContact(Contact contact) {
         //  Your code goes here....
-        myfriends[friendsCount++] = contact;
+        myFriends[friendsCount++] = contact;
         // friendsCount++;
         //  Nothing to be returned... As this method is void...
     }
@@ -64,7 +64,7 @@ class ContactsManager {
     public Contact searchContact(String searchName) {
         //  Your code goes here....
         for (int i = 0; i < friendsCount; i++) {
-            if (myFrineds[i].getName().equals(searchName)) {
+            if (myFriends[i].getName().equals(searchName)) {
                 return myFriends[i];
             }
         }
@@ -80,7 +80,7 @@ class ContactsManager {
     public Contact searchContactByEmail(String email) {
         //  Your code goes here....
         for (int i = 0; i < friendsCount; i++) {
-            if (myFrineds[i].getEmail().equals(searchName)) {
+            if (myFriends[i].getEmail().equals(email)) {
                 return myFriends[i];
             }
         }
@@ -96,10 +96,11 @@ class ContactsManager {
      */
     public boolean deleteContact(String searchName) {
         //  Your code goes here....
-        int index;
+        int index =-1;
         for (int i = 0; i < friendsCount; i++) {
-            if (myFrineds[i].getName().equals(searchName)) {
+            if (myFriends[i].getName().equals(searchName)) {
                 index = i;
+                break;++
             }
         }
         if (index >= 0) {
@@ -113,13 +114,13 @@ class ContactsManager {
     }
 
     // Any additional method that you want to implement by yourself.
-    public String toString() {
-        String s = "";
-        for (Contact friend : myFriends) {
-            s += friend.toString() + "\n";
-        }
+    // public String toString() {
+    //     String s = "";
+    //     for (Contact friend : myFriends) {
+    //         s += friend.toString() + "\n";
+    //     }
 
-        return s;
-    }
+    //     return s;
+    // }
     //  Happy Coding... Have Fun.....
 }
