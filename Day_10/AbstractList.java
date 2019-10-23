@@ -159,7 +159,7 @@ public abstract class AbstractList implements ListInterface  {
         // Your code goes here.
         if(index > 0 && index > size){
             resize();
-            list[size] = item;
+            list[index] = item;
         }else if(index > 0 && index < size){
             for (int i = size; i > index; i--){
                 list[i] = list[i-1];
@@ -326,12 +326,13 @@ public abstract class AbstractList implements ListInterface  {
     public boolean contains(int item) {
         // TODO
         // Your code goes here.
-        for(int i = 0; i < size; i++){
-            if (list[i] == item){
-                return true;
-            }
-        }
-        return false;
+        // for(int i = 0; i < size; i++){
+        //     if (list[i] == item){
+        //         return true;
+        //     }
+        // }
+        // return false;
+        return indexOf(item) != -1;
     }
 
     /*
