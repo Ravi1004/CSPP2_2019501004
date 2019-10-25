@@ -1,3 +1,7 @@
+/**
+ * @author Ravi
+ */
+
 import java.util.*;
 import java.text.*;
 import java.time.*;
@@ -6,13 +10,17 @@ public final class ToDoList {
 
     private Task[] tasks;
     private int taskIndex;
-
+/**
+ * This is a constructor.
+ */
     public ToDoList() {
         final int capacity = 10;
         this.tasks = new Task[capacity];
         this.taskIndex = 0;
     }
-
+/**
+ * this is a resize function, called when size execeds
+ */
     public void resize() {
         Task[] temp = new Task[taskIndex * 2];
         for (int index = 0; index < taskIndex; index++) {
@@ -21,7 +29,10 @@ public final class ToDoList {
         tasks = temp;
         temp = null;
     }
-
+/**
+ * this is a add task method used 
+ * @param obj
+ */
     public void addTask(final Task obj) {
         if (taskIndex == tasks.length) {
             resize();

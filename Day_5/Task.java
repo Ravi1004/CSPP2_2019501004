@@ -9,9 +9,7 @@ public  class Task {
     private String status;
     private SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Task() {
-
-    }
+    
 
     public Task(final String str) throws ParseException {
         final String[] arr = str.split(" ");
