@@ -134,7 +134,6 @@ public abstract class AbstractList implements ListInterface  {
 
     /**
      * Given an index and an item, adds this item at a particular index.
-     * 
      * Example:
      * 
      * Let's say for example the List object contains : [5,-2,3,1,6,-1]
@@ -304,7 +303,6 @@ public abstract class AbstractList implements ListInterface  {
      * Example: [1,2,3,0,0,0,0,0,0,0]
      * toString should only return the items in the list and
      * not all the elements of the listay.
-     *
      */
     public String toString() {
         // Replace the code below

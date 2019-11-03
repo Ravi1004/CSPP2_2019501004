@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 /**
- * this is a movie database which will seperate movies based on dificulty level 
+ * this is a movie database which will seperate movies based on dificulty level
  * and stored in arraylist
  * @author Ravi
- * 
+ *
  */
-public class Movie_db{
+public class Movie_db {
+
     static ArrayList<Movies> easyMovie = new ArrayList<Movies>();
     static ArrayList<Movies> mediumMovie = new ArrayList<Movies>();
     static ArrayList<Movies> hardMovie = new ArrayList<Movies>();
@@ -19,10 +20,10 @@ public class Movie_db{
                mediumMovie.add(eachMovie.get(i));
 
            }else{
-               hardMovie.add(eachMovie.get(i));   
+               hardMovie.add(eachMovie.get(i));
            }
         }
 
     }
-    
+
 }
