@@ -13,12 +13,5 @@ public class List extends AbstractList{
         }
     }
 
-    // public int indexOf(int item) {
-    //     for(int i = 0; i < size; i++) {
-    //         if(item == list[i]){
-    //             return i;
-    //         }
-    //     }
-    //     return -1;
-    // }
+  
 }
